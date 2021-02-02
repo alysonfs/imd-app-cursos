@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_logo_inverse_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingRight="19dp"
+        android:paddingLeft="19dp">
+
+        <TextView
+            android:id="@+id/msg_help_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="help_text"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"/>
+
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:hint="@string/ht_user"
+            android:maxLines="1"
+            android:textColorHint="@color/purple_200"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:hint="@string/ht_pass"
+            android:textColorHint="@color/purple_200"/>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/bt_text_exit"
+                android:textColor="#673AB7"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/bt_singup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bt_text_singup"
+                android:textColor="#673AB7"
+                app:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/bt_singin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/bt_text_singin"
+                android:textColor="#673AB7"
+                app:backgroundTint="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@android:drawable/presence_offline"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IMD APP</string>
+    <string name="descript_logo">Logo IMD</string>
+    <string name="msg_help_login">Informe suas credencias</string>
+    <string name="ht_user">Usuário</string>
+    <string name="ht_pass">Senha</string>
+    <string name="bt_text_exit">Sair</string>
+    <string name="bt_text_singup">Cadastrar</string>
+    <string name="bt_text_singin">Entrar</string>
+</resources>
